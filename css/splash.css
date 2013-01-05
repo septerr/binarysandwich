@@ -1,0 +1,51 @@
+.container {
+    background-color: black;
+    margin: auto;
+}
+
+.sandwich-box {
+    margin: auto;
+
+}
+
+body {
+    background-color: #231f20;
+    text-align: center;
+
+}
+
+#coming-soon {
+    width: 1000px;
+    height: 600px;
+    border-radius: 15px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #ffffff;
+
+}
+
+#coming-soon-image {
+    display: inline-block;
+    width: 329px;
+    height: 400px;
+    background: url('../images/comingsoon/comingsoonimage.png');
+}
+
+#coming-soon-text {
+    display: inline-block;
+    background: url('../images/comingsoon/comingsoontext.png');
+    width: 605px;
+    height: 400px;
+}
+
+#coming-soon-email{
+    text-align: center;
+    color: #231f20;
+    font-family: 'Stoke', sans-serif;
+    font-size: 24px;
+}
+
+a {
+    color: #231f20;
+    font-weight: bold;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Binary Sandwich</title>
+    <script src="js/jquery-1.7.1.js"></script>
+    <link href="css/splash.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">
+    <div class="sandwich-box" id="sandwich-box">
+        <img id="sandwich-img" src="images/splash/burger.png"/>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    var BS = BS || {};
+    BS.sandwichImgs = [];
+    BS.sandwichImgs.push('images/splash/20');
+    BS.sandwichImgs.push('images/splash/19');
+    BS.sandwichImgs.push('images/splash/18');
+    BS.sandwichImgs.push('images/splash/17');
+    BS.sandwichImgs.push('images/splash/16');
+    BS.sandwichImgs.push('images/splash/15');
+    BS.sandwichImgs.push('images/splash/14');
+    BS.sandwichImgs.push('images/splash/13');
+    BS.sandwichImgs.push('images/splash/12');
+    BS.sandwichImgs.push('images/splash/11');
+    BS.sandwichImgs.push('images/splash/10');
+    BS.sandwichImgs.push('images/splash/9');
+    BS.sandwichImgs.push('images/splash/8');
+    BS.sandwichImgs.push('images/splash/7');
+    BS.sandwichImgs.push('images/splash/6');
+    BS.sandwichImgs.push('images/splash/5');
+    BS.sandwichImgs.push('images/splash/4');
+    BS.sandwichImgs.push('images/splash/3');
+    BS.sandwichImgs.push('images/splash/2');
+    BS.sandwichImgs.push('images/splash/1');
+    BS.updateSandwichBox = function(){
+        var nextImg = BS.sandwichImgs.pop();
+        if(nextImg){
+            $('#sandwich-img').attr('src', nextImg + '.png');
+            setTimeout("BS.updateSandwichBox()", 500);
+        }
+
+    };
+
+   BS.updateSandwichBox();
+
+</script>
+</html>
